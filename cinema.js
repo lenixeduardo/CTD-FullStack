@@ -86,7 +86,7 @@ console.log(
     adicionarFilme({
         codigo: 6,
         titulo: "O poderoso Chefão",
-        duracao: 1.5,
+        duracao: 3.5,
         atores: ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
         anoDeLancamento: 2001,
         
@@ -96,6 +96,10 @@ console.log(
 // listar os filmes com maior duracao do que 2h 
 
 
-function listarFilmescomLongaDuracao() {
-    
+const listarFilmesComLongaDuracao = () => {
+    return catalogo.filter((filme) => filme.duracao > 2)
 }
+
+console.log("teste")
+
+// console.log(listarFilmesComLongaDuracao())
